@@ -12,13 +12,31 @@ them.  It adds more control over version control.
 How can you use the staging area to make sure you have one commit per logical
 change?
 
+    By using "git diff --staged" before committing, you can see the difference
+in the files and ensure they are one logical change.
+
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
+    Branches help if you are in the correct directory.  (How do you delete a
+branch that is accidently made?)  Branches are helpful when testing out a new
+feature, but don't want to break working code.  Branches allow the working code
+to remain the "master" and branches can become test cases.
+
 How do the diagrams help you visualize the branch structure?
+
+    Diagrams draw out the entire tree so that it is easy to see where all of
+the branches are, but how do you know what the branch names are?
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
+    Merging two branches together combines code into one branch, deleting
+unneeded code and adding all changes.  To demonstrate where the branches are.
+
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+
+    Automatic merging is quicker, but runs the risk of redundant code.  Manual
+merging may be a little more difficult, but a careful grooming of the code
+should reveal potential redundant code.
